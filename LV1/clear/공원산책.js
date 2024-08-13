@@ -1,3 +1,12 @@
+/**
+ * 알게된점
+ * 
+ * while 반복문이 필요하다 싶은 순간에도 for 반복문 사용이 가능할지도?
+ * 성공 여부 나타내는 플래그 변수로 성공시 위치 변경, 실패시 제자리에 이런거 할 수 있음
+ * 
+ */
+
+
 // 공원의 가로 길이가 W, 세로 길이가 H라고 할 때, 
 // 공원의 좌측 상단의 좌표는 (0, 0), 우측 하단의 좌표는 (H - 1, W - 1) 입니다.
 const park = ["OOO", "OSX", "OOO"];
@@ -84,7 +93,7 @@ function solution(park, routes) {
         if(dir === 'E'){
             for(let i = copyStart[1]; i <= parseInt(deg) + copyStart[1]; i ++){
 
-                if(parseInt(deg) + copyStart[0] > parkMaxSizeY){
+                if(parseInt(deg) + copyStart[1] > parkMaxSizeY){
                     isSuccess = false;
                 }else{
                     let temp = [copyStart[0], i];
