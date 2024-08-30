@@ -27,8 +27,7 @@ function solution(a, b, n) {
         havingCoke += -minus + plus;
         console.log(minus, plus, havingCoke)
     }
-    console.log(sum)
-    return sum * b;
+    return sum;
 }
 
 solution(a, b, n);
