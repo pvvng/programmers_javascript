@@ -1,4 +1,4 @@
-const n = 1000
+const n = 31
 // 소수의 개수를 반환
 function solution(n) {
     answer = 0;
@@ -15,6 +15,7 @@ function solution(n) {
             }
         }
     }
+    console.log(sieve)
     sieve.forEach(s => {
         if(s) answer ++
     })
