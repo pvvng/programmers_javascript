@@ -18,10 +18,6 @@ function solution(balls, share) {
     ));
 }
 
-// function solution(balls, share){
-    
-// }
-
 solution(balls, share);
 
 // node 추천문제/구슬로나누는경우의수.js
